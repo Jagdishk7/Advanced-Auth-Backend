@@ -14,9 +14,8 @@ app.use(cookieParser()); // Third-party middleware
 
 app.use(
   cors({
-    origin: `${process.env.CLIENT_URL}`,
-    credentials: true,
-    methods: "GET,HEAD,PUT,PATCH,POST,DELETE"
+    origin: [process.env.CLIENT_URL],
+    credentials: true
   })
 ); //Third-party middleware
 
