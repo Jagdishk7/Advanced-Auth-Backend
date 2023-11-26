@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 const MONGODB_URL =
-  process.env.MONGODB_URL || "mongodb://localhost:27017/my_database";
+  process.env.MONGODB_URL || "mongodb://0.0.0.0:27017/AdvancedAuth";
 
 // mongoDb database connection
 const databaseconnect = () => {
